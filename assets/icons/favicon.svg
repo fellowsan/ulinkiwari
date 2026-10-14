@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="UlinKiwari Games logo">
+  <!-- Provisional logo: playful sun + spark. Abstract mark, not a cultural symbol. -->
+  <rect x="2" y="2" width="60" height="60" rx="16" fill="#211B2B"/>
+  <g stroke="#FFD76A" stroke-width="4.5" stroke-linecap="round">
+    <line x1="32" y1="8" x2="32" y2="15"/>
+    <line x1="32" y1="49" x2="32" y2="56"/>
+    <line x1="8" y1="32" x2="15" y2="32"/>
+    <line x1="49" y1="32" x2="56" y2="32"/>
+    <line x1="15" y1="15" x2="20" y2="20"/>
+    <line x1="44" y1="44" x2="49" y2="49"/>
+    <line x1="49" y1="15" x2="44" y2="20"/>
+    <line x1="20" y1="44" x2="15" y2="49"/>
+  </g>
+  <circle cx="32" cy="32" r="11" fill="#FF7849"/>
+  <path d="M47 12l1.7 4.3L53 18l-4.3 1.7L47 24l-1.7-4.3L41 18l4.3-1.7z" fill="#6546A6"/>
+</svg>
