@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-i18n="games.meta.title">Games | UlinKiwari Games</title>
+  <meta name="description" data-i18n-attr="content:games.meta.desc" content="The game catalog of UlinKiwari Games. New titles are on the way, check back soon!">
+  <link rel="canonical" href="https://ulinkiwari.my.id/games.html">
+  <link rel="alternate" hreflang="en" href="https://ulinkiwari.my.id/games.html">
+  <link rel="alternate" hreflang="id" href="https://ulinkiwari.my.id/games.html">
+  <link rel="alternate" hreflang="x-default" href="https://ulinkiwari.my.id/games.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" data-i18n-attr="content:meta.og.site" content="UlinKiwari Games">
+  <meta property="og:title" data-i18n-attr="content:games.meta.title" content="Games | UlinKiwari Games">
+  <meta property="og:description" data-i18n-attr="content:games.meta.desc" content="The game catalog of UlinKiwari Games. New titles are on the way, check back soon!">
+  <meta property="og:url" content="https://ulinkiwari.my.id/games.html">
+  <meta name="theme-color" content="#FFFAF2" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#211B2B" media="(prefers-color-scheme: dark)">
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script>
+  (function(){try{
+    var t=localStorage.getItem('ulinkiwari-theme');
+    if(t==='dark')document.documentElement.classList.add('dark');
+    var l=localStorage.getItem('ulinkiwari-lang');
+    document.documentElement.setAttribute('lang',l==='id'?'id':'en');
+    document.documentElement.classList.add('theme-anim');
+  }catch(e){}})();
+  </script>
+</head>
+<body class="bg-ivory text-charcoal dark:bg-plum dark:text-ivory min-h-screen flex flex-col">
+<a href="#main" class="skip-link" data-i18n="a11y.skip">Skip to content</a>
+
+<header class="sticky top-0 z-50 bg-ivory/90 dark:bg-plum/90 backdrop-blur border-b-2 border-line-light dark:border-line-dark">
+  <div class="mx-auto max-w-6xl px-4 sm:px-6">
+    <div class="flex h-16 items-center justify-between gap-2">
+      <a href="index.html" class="flex items-center gap-2.5 rounded-xl shrink-0" aria-label="UlinKiwari Games">
+        <svg width="38" height="38" viewBox="0 0 64 64" aria-hidden="true" class="shrink-0"><rect x="2" y="2" width="60" height="60" rx="16" fill="#211B2B"/><g stroke="#FFD76A" stroke-width="4.5" stroke-linecap="round"><line x1="32" y1="8" x2="32" y2="15"/><line x1="32" y1="49" x2="32" y2="56"/><line x1="8" y1="32" x2="15" y2="32"/><line x1="49" y1="32" x2="56" y2="32"/><line x1="15" y1="15" x2="20" y2="20"/><line x1="44" y1="44" x2="49" y2="49"/><line x1="49" y1="15" x2="44" y2="20"/><line x1="20" y1="44" x2="15" y2="49"/></g><circle cx="32" cy="32" r="11" fill="#FF7849"/><path d="M47 12l1.7 4.3L53 18l-4.3 1.7L47 24l-1.7-4.3L41 18l4.3-1.7z" fill="#6546A6"/></svg>
+        <span class="leading-none">
+          <span class="block font-display font-extrabold text-lg tracking-tight">UlinKiwari</span>
+          <span class="block text-[0.62rem] font-bold tracking-[0.28em] text-brand-purple dark:text-brand-yellow font-display">GAMES</span>
+        </span>
+      </a>
+      <nav class="hidden md:flex items-center gap-1" aria-label="Primary">
+        <a href="index.html" class="nav-link" data-i18n="nav.home">Home</a>
+        <a href="about.html" class="nav-link" data-i18n="nav.about">About</a>
+        <a href="games.html" class="nav-link nav-link-active" aria-current="page" data-i18n="nav.games">Games</a>
+        <a href="contact.html" class="nav-link" data-i18n="nav.contact">Contact</a>
+      </nav>
+      <div class="flex items-center gap-1.5">
+        <div class="hidden sm:flex items-center rounded-full border-2 border-line-light dark:border-line-dark p-0.5" role="group" data-i18n-attr="aria-label:lang.label" aria-label="Language">
+          <button type="button" data-lang="en" aria-pressed="true" class="lang-btn lang-active">EN</button>
+          <button type="button" data-lang="id" aria-pressed="false" class="lang-btn">ID</button>
+        </div>
+        <button type="button" data-theme-toggle class="icon-btn" data-i18n-attr="aria-label:theme.toggle" aria-label="Toggle color theme">
+          <svg data-icon-moon width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+          <svg data-icon-sun width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="hidden"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+          <span data-theme-label class="hidden lg:inline text-sm font-semibold">Dark mode</span>
+        </button>
+        <button type="button" id="menu-btn" class="icon-btn md:hidden" aria-expanded="false" aria-controls="mobile-menu" data-i18n-attr="aria-label:nav.menu.open" aria-label="Open menu">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><line x1="4" y1="7" x2="20" y2="7"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="17" x2="20" y2="17"/></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div id="mobile-menu" class="md:hidden border-t-2 border-line-light dark:border-line-dark" hidden>
+    <nav class="mx-auto max-w-6xl px-4 sm:px-6 py-3 flex flex-col" aria-label="Mobile">
+      <a href="index.html" class="nav-link" data-i18n="nav.home">Home</a>
+      <a href="about.html" class="nav-link" data-i18n="nav.about">About</a>
+      <a href="games.html" class="nav-link" aria-current="page" data-i18n="nav.games">Games</a>
+      <a href="contact.html" class="nav-link" data-i18n="nav.contact">Contact</a>
+      <div class="flex items-center gap-2 py-3 sm:hidden" role="group" data-i18n-attr="aria-label:lang.label" aria-label="Language">
+        <span class="text-sm font-semibold text-muted-light dark:text-muted-dark" data-i18n="lang.label">Language</span>
+        <button type="button" data-lang="en" aria-pressed="true" class="lang-btn lang-active">EN</button>
+        <button type="button" data-lang="id" aria-pressed="false" class="lang-btn">ID</button>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main id="main" class="flex-1">
+  <section class="py-14 md:py-20">
+    <div class="mx-auto max-w-4xl px-4 sm:px-6 text-center">
+      <p class="sticker text-brand-purple dark:text-brand-yellow border-brand-purple dark:border-brand-yellow reveal" data-i18n="games.hero.kicker">Catalog</p>
+      <h1 class="mt-5 text-4xl md:text-5xl font-extrabold reveal" data-i18n="games.hero.title">Our Games</h1>
+      <p class="mt-4 text-lg text-muted-light dark:text-muted-dark reveal" data-i18n="games.hero.sub">Every game we release will live here.</p>
+    </div>
+  </section>
+
+  <!-- Coming soon state -->
+  <section class="pb-12">
+    <div class="mx-auto max-w-4xl px-4 sm:px-6">
+      <div class="card-pop bg-ivory dark:bg-plum-soft p-10 text-center reveal">
+        <div class="mx-auto w-16 h-16 rounded-3xl bg-brand-yellow/60 dark:bg-brand-yellow/20 flex items-center justify-center" aria-hidden="true">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#e85f31" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="20" height="12" rx="6"/><line x1="7" y1="12" x2="7.01" y2="12"/><line x1="10.5" y1="10.5" x2="10.5" y2="13.5"/><circle cx="16" cy="10.8" r="0.6" fill="#e85f31"/><circle cx="18" cy="13" r="0.6" fill="#e85f31"/></svg>
+        </div>
+        <h2 class="mt-4 text-2xl font-extrabold" data-i18n="games.empty.title">Coming Soon</h2>
+        <p class="mt-2 text-muted-light dark:text-muted-dark max-w-md mx-auto" data-i18n="games.empty.text">Exciting games are in the works. Stay tuned for what's next!</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Example layout preview -->
+  <section class="py-12 md:py-16 bg-ivory-deep/50 dark:bg-plum-soft/30">
+    <div class="mx-auto max-w-6xl px-4 sm:px-6">
+      <p class="sticker text-brand-orange-deep dark:text-brand-orange border-brand-orange reveal" data-i18n="games.examples.kicker">Layout Preview</p>
+      <h2 class="mt-4 text-3xl font-extrabold reveal" data-i18n="games.examples.title">How game cards will look</h2>
+      <p class="mt-3 text-muted-light dark:text-muted-dark reveal" data-i18n="games.examples.note">The two cards below are layout examples only, not real games.</p>
+      <div class="mt-8 grid gap-6 md:grid-cols-2">
+        <!-- EXAMPLE CARD 1 -->
+        <article class="card-pop bg-ivory dark:bg-plum-soft overflow-hidden reveal opacity-90" aria-label="Example card">
+          <div class="h-44 bg-gradient-to-br from-brand-orange/70 to-brand-purple/70 flex items-center justify-center">
+            <svg width="72" height="72" viewBox="0 0 72 72" role="img" data-i18n-attr="aria-label:games.ex.art.alt" aria-label="Example placeholder artwork"><rect x="8" y="8" width="56" height="56" rx="16" fill="#FFFAF2" opacity="0.85"/><circle cx="36" cy="36" r="12" fill="#FF7849"/><path d="M52 18l2.4 6L60 26.4l-5.6 2.4L52 35l-2.4-6.2L44 26.4l5.6-2.4z" fill="#6546A6"/></svg>
+          </div>
+          <div class="p-6">
+            <div class="flex items-center justify-between gap-2">
+              <span class="sticker text-brand-purple dark:text-brand-yellow border-brand-purple dark:border-brand-yellow !text-[0.68rem]" data-i18n="games.ex1.status">Example</span>
+              <span class="text-sm font-semibold text-muted-light dark:text-muted-dark" data-i18n="games.ex1.genre">Cozy Puzzle</span>
+            </div>
+            <h3 class="mt-3 text-xl font-extrabold" data-i18n="games.ex1.title">Example Game A</h3>
+            <p class="mt-2 text-muted-light dark:text-muted-dark" data-i18n="games.ex1.desc">A sample card showing how a finished game will be presented: artwork, genre, and store link.</p>
+          </div>
+        </article>
+        <!-- EXAMPLE CARD 2 -->
+        <article class="card-pop bg-ivory dark:bg-plum-soft overflow-hidden reveal opacity-90" aria-label="Example card">
+          <div class="h-44 bg-gradient-to-br from-brand-purple/70 to-brand-yellow/70 flex items-center justify-center">
+            <svg width="72" height="72" viewBox="0 0 72 72" role="img" data-i18n-attr="aria-label:games.ex.art.alt" aria-label="Example placeholder artwork"><rect x="8" y="8" width="56" height="56" rx="16" fill="#211B2B" opacity="0.9"/><path d="M30 26l18 10-18 10z" fill="#FFD76A"/><circle cx="52" cy="20" r="5" fill="#FF7849"/></svg>
+          </div>
+          <div class="p-6">
+            <div class="flex items-center justify-between gap-2">
+              <span class="sticker text-brand-purple dark:text-brand-yellow border-brand-purple dark:border-brand-yellow !text-[0.68rem]" data-i18n="games.ex2.status">Example</span>
+              <span class="text-sm font-semibold text-muted-light dark:text-muted-dark" data-i18n="games.ex2.genre">Fun Arcade</span>
+            </div>
+            <h3 class="mt-3 text-xl font-extrabold" data-i18n="games.ex2.title">Example Game B</h3>
+            <p class="mt-2 text-muted-light dark:text-muted-dark" data-i18n="games.ex2.desc">Another sample card. Real titles, descriptions, and Play Store links will appear here once confirmed.</p>
+          </div>
+        </article>
+      </div>
+      <div class="mt-8 placeholder-note reveal">
+        <h3 class="font-display font-extrabold" data-i18n="games.howto.title">Adding a new game</h3>
+        <p class="mt-1 text-muted-light dark:text-muted-dark" data-i18n="games.howto.text">Game cards are plain HTML, copy the example card pattern and fill in the real title, genre, description, artwork, and verified store URL. Full instructions live in README.md.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="mt-auto border-t-2 border-line-light dark:border-line-dark bg-ivory-deep/60 dark:bg-plum-soft/40">
+  <div class="mx-auto max-w-6xl px-4 sm:px-6 py-12">
+    <div class="grid gap-10 md:grid-cols-3">
+      <div>
+        <div class="flex items-center gap-2.5">
+          <svg width="32" height="32" viewBox="0 0 64 64" aria-hidden="true"><rect x="2" y="2" width="60" height="60" rx="16" fill="#211B2B"/><g stroke="#FFD76A" stroke-width="4.5" stroke-linecap="round"><line x1="32" y1="8" x2="32" y2="15"/><line x1="32" y1="49" x2="32" y2="56"/><line x1="8" y1="32" x2="15" y2="32"/><line x1="49" y1="32" x2="56" y2="32"/><line x1="15" y1="15" x2="20" y2="20"/><line x1="44" y1="44" x2="49" y2="49"/><line x1="49" y1="15" x2="44" y2="20"/><line x1="20" y1="44" x2="15" y2="49"/></g><circle cx="32" cy="32" r="11" fill="#FF7849"/><path d="M47 12l1.7 4.3L53 18l-4.3 1.7L47 24l-1.7-4.3L41 18l4.3-1.7z" fill="#6546A6"/></svg>
+          <span class="font-display font-extrabold">UlinKiwari Games</span>
+        </div>
+        <p class="mt-3 font-display font-bold text-brand-orange-deep dark:text-brand-orange" data-i18n="brand.tagline">Maén di Jaman Kiwari.</p>
+        <p class="mt-2 text-sm text-muted-light dark:text-muted-dark" data-i18n="footer.desc">An indie game studio crafting fun, creative play for today's players, with the warmth of Sundanese values and inspiration.</p>
+      </div>
+      <nav aria-label="Footer">
+        <h3 class="font-display font-extrabold" data-i18n="footer.nav.title">Explore</h3>
+        <ul class="mt-3 space-y-1">
+          <li><a href="index.html" class="footer-link" data-i18n="nav.home">Home</a></li>
+          <li><a href="about.html" class="footer-link" data-i18n="nav.about">About</a></li>
+          <li><a href="games.html" class="footer-link" data-i18n="nav.games">Games</a></li>
+          <li><a href="contact.html" class="footer-link" data-i18n="nav.contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div>
+        <h3 class="font-display font-extrabold" data-i18n="footer.legal.title">Legal</h3>
+        <ul class="mt-3 space-y-1">
+          <li><a href="privacy.html" class="footer-link" data-i18n="footer.privacy">Privacy Policy</a></li>
+          <li><a href="terms.html" class="footer-link" data-i18n="footer.terms">Terms of Service</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="mt-10 pt-6 border-t border-line-light dark:border-line-dark flex flex-col sm:flex-row justify-between gap-2 text-sm text-muted-light dark:text-muted-dark">
+      <p>© <span data-year>2026</span> UlinKiwari Games. <span data-i18n="footer.rights">All rights reserved.</span></p>
+      <p class="text-xs" data-i18n="footer.logo.note">Provisional logo</p>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/i18n.js" defer></script>
+<script src="assets/js/main.js" defer></script>
+</body>
+</html>
