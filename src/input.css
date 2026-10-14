@@ -1,0 +1,279 @@
+@import "tailwindcss";
+
+/* ── Kiwari Pop design tokens ─────────────────────────────── */
+@theme {
+  --color-brand-orange: #ff7849;
+  --color-brand-orange-deep: #e85f31;
+  --color-brand-purple: #6546a6;
+  --color-brand-purple-deep: #4e3583;
+  --color-brand-yellow: #ffd76a;
+  --color-ivory: #fffaf2;
+  --color-ivory-deep: #f7efe2;
+  --color-plum: #211b2b;
+  --color-plum-soft: #2c2338;
+  --color-charcoal: #29232e;
+  --color-muted-light: #6f6580;
+  --color-muted-dark: #b9aecb;
+  --color-line-light: #eadfce;
+  --color-line-dark: #3a2f4a;
+
+  --font-display: "Plus Jakarta Sans", "Nunito Sans", ui-sans-serif, system-ui,
+    -apple-system, "Segoe UI", sans-serif;
+  --font-body: "Inter", "DM Sans", ui-sans-serif, system-ui, -apple-system,
+    "Segoe UI", sans-serif;
+}
+
+/* Class-based dark mode (toggled on <html>) */
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* ── Base ─────────────────────────────────────────────────── */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-display);
+  letter-spacing: -0.015em;
+}
+
+/* Visible focus for keyboard users */
+:focus-visible {
+  outline: 3px solid var(--color-brand-orange);
+  outline-offset: 3px;
+  border-radius: 6px;
+}
+.dark :focus-visible {
+  outline-color: var(--color-brand-yellow);
+}
+
+/* Gentle theme transition (disabled for reduced motion) */
+.theme-anim,
+.theme-anim body,
+.theme-anim a,
+.theme-anim button {
+  transition: background-color 0.25s ease, color 0.25s ease,
+    border-color 0.25s ease;
+}
+
+/* ── Playful components ───────────────────────────────────── */
+.sticker {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 0.78rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 0.4rem 0.9rem;
+  border-radius: 999px;
+  border: 2px solid currentColor;
+  transform: rotate(-2deg);
+  box-shadow: 3px 3px 0 rgba(41, 35, 46, 0.12);
+}
+.dark .sticker {
+  box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.35);
+}
+
+.card-pop {
+  border-radius: 1.5rem;
+  border: 2px solid var(--color-line-light);
+  box-shadow: 6px 6px 0 rgba(101, 70, 166, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.dark .card-pop {
+  border-color: var(--color-line-dark);
+  box-shadow: 6px 6px 0 rgba(0, 0, 0, 0.35);
+}
+.card-pop:hover {
+  transform: translateY(-4px) rotate(-0.4deg);
+  box-shadow: 8px 10px 0 rgba(255, 120, 73, 0.22);
+}
+
+.btn-pop {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-family: var(--font-display);
+  font-weight: 800;
+  border-radius: 999px;
+  padding: 0.85rem 1.9rem;
+  min-height: 3rem;
+  border: 2px solid transparent;
+  box-shadow: 4px 4px 0 rgba(41, 35, 46, 0.16);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+.btn-pop:hover {
+  transform: translateY(-2px);
+  box-shadow: 6px 7px 0 rgba(41, 35, 46, 0.18);
+}
+.btn-pop:active {
+  transform: translateY(1px);
+  box-shadow: 2px 2px 0 rgba(41, 35, 46, 0.16);
+}
+.dark .btn-pop {
+  box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.45);
+}
+
+.placeholder-note {
+  border: 2px dashed var(--color-brand-orange);
+  border-radius: 1rem;
+  background: color-mix(in srgb, var(--color-brand-orange) 7%, transparent);
+  padding: 1rem 1.25rem;
+  font-size: 0.95rem;
+}
+.dark .placeholder-note {
+  background: color-mix(in srgb, var(--color-brand-orange) 14%, transparent);
+}
+
+/* Scroll reveal */
+.reveal {
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.reveal.is-visible {
+  opacity: 1;
+  transform: none;
+}
+
+/* Respect reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .theme-anim,
+  .theme-anim body,
+  .theme-anim a,
+  .theme-anim button,
+  .card-pop,
+  .btn-pop,
+  .reveal {
+    transition: none !important;
+    animation: none !important;
+  }
+  .reveal {
+    opacity: 1;
+    transform: none;
+  }
+  .sticker {
+    transform: none;
+  }
+}
+
+/* Skip link */
+.skip-link {
+  position: absolute;
+  left: 1rem;
+  top: -4rem;
+  z-index: 100;
+  background: var(--color-brand-orange);
+  color: #fff;
+  font-weight: 700;
+  padding: 0.75rem 1.25rem;
+  border-radius: 0 0 1rem 1rem;
+  transition: top 0.2s ease;
+}
+.skip-link:focus {
+  top: 0;
+}
+
+/* ── Shared header/footer components ──────────────────────── */
+.nav-link {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 0.95rem;
+  padding: 0.6rem 1rem;
+  border-radius: 999px;
+  color: var(--color-charcoal);
+  min-height: 2.75rem;
+  display: inline-flex;
+  align-items: center;
+}
+.dark .nav-link {
+  color: var(--color-ivory);
+}
+.nav-link:hover {
+  background: color-mix(in srgb, var(--color-brand-orange) 14%, transparent);
+}
+.nav-link-active {
+  background: var(--color-brand-orange);
+  color: #fff !important;
+}
+.dark .nav-link-active {
+  background: var(--color-brand-orange);
+  color: #fff !important;
+}
+
+.icon-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  min-width: 2.75rem;
+  min-height: 2.75rem;
+  border-radius: 999px;
+  border: 2px solid var(--color-line-light);
+  color: var(--color-charcoal);
+  padding: 0.4rem 0.6rem;
+}
+.dark .icon-btn {
+  border-color: var(--color-line-dark);
+  color: var(--color-ivory);
+}
+.icon-btn:hover {
+  border-color: var(--color-brand-orange);
+  color: var(--color-brand-orange-deep);
+}
+.dark .icon-btn:hover {
+  color: var(--color-brand-yellow);
+}
+
+.lang-btn {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 0.8rem;
+  letter-spacing: 0.06em;
+  padding: 0.45rem 0.7rem;
+  min-height: 2.5rem;
+  border-radius: 999px;
+  color: var(--color-muted-light);
+}
+.dark .lang-btn {
+  color: var(--color-muted-dark);
+}
+.lang-btn:hover {
+  color: var(--color-brand-orange-deep);
+}
+.lang-btn.lang-active {
+  background: var(--color-brand-purple);
+  color: #fff;
+}
+.dark .lang-btn.lang-active {
+  background: var(--color-brand-yellow);
+  color: var(--color-plum);
+}
+
+.footer-link {
+  display: inline-block;
+  padding: 0.35rem 0;
+  color: var(--color-muted-light);
+}
+.dark .footer-link {
+  color: var(--color-muted-dark);
+}
+.footer-link:hover {
+  color: var(--color-brand-orange-deep);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+.dark .footer-link:hover {
+  color: var(--color-brand-yellow);
+}
