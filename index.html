@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="su">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title data-i18n="index.meta.title">UlinKiwari Games: Maén di Jaman Kiwari.</title>
-  <meta name="description" data-i18n-attr="content:index.meta.desc" content="UlinKiwari Games is an indie game studio crafting fun, creative games for today's players, inspired by the warmth of Sundanese culture. Maén di Jaman Kiwari!">
+  <meta name="description" data-i18n-attr="content:index.meta.desc" content="UlinKiwari Games nyaéta sanggar kaulinan indie nu nyieun kaulinan seru jeung kréatif pikeun pamaén jaman kiwari, diilhaman ku kahaneutan budaya Sunda. Maén di Jaman Kiwari!">
   <link rel="canonical" href="https://ulinkiwari.my.id/">
   <link rel="alternate" hreflang="en" href="https://ulinkiwari.my.id/">
   <link rel="alternate" hreflang="id" href="https://ulinkiwari.my.id/">
@@ -12,7 +12,7 @@
   <meta property="og:type" content="website">
   <meta property="og:site_name" data-i18n-attr="content:meta.og.site" content="UlinKiwari Games">
   <meta property="og:title" data-i18n-attr="content:index.meta.title" content="UlinKiwari Games: Maén di Jaman Kiwari.">
-  <meta property="og:description" data-i18n-attr="content:index.meta.desc" content="UlinKiwari Games is an indie game studio crafting fun, creative games for today's players, inspired by the warmth of Sundanese culture. Maén di Jaman Kiwari!">
+  <meta property="og:description" data-i18n-attr="content:index.meta.desc" content="UlinKiwari Games nyaéta sanggar kaulinan indie nu nyieun kaulinan seru jeung kréatif pikeun pamaén jaman kiwari, diilhaman ku kahaneutan budaya Sunda. Maén di Jaman Kiwari!">
   <meta property="og:url" content="https://ulinkiwari.my.id/">
   <meta name="theme-color" content="#FFFAF2" media="(prefers-color-scheme: light)">
   <meta name="theme-color" content="#211B2B" media="(prefers-color-scheme: dark)">
@@ -35,7 +35,7 @@
   </script>
 </head>
 <body class="bg-ivory text-charcoal dark:bg-plum dark:text-ivory min-h-screen flex flex-col">
-<a href="#main" class="skip-link" data-i18n="a11y.skip">Skip to content</a>
+<a href="#main" class="skip-link" data-i18n="a11y.skip">Luncat ka eusi</a>
 
 <header class="sticky top-0 z-50 bg-ivory/90 dark:bg-plum/90 backdrop-blur border-b-2 border-line-light dark:border-line-dark">
   <div class="mx-auto max-w-6xl px-4 sm:px-6">
@@ -48,22 +48,23 @@
         </span>
       </a>
       <nav class="hidden md:flex items-center gap-1" aria-label="Primary">
-        <a href="/" class="nav-link nav-link-active" aria-current="page" data-i18n="nav.home">Home</a>
-        <a href="/about" class="nav-link" data-i18n="nav.about">About</a>
-        <a href="/games" class="nav-link" data-i18n="nav.games">Games</a>
-        <a href="/contact" class="nav-link" data-i18n="nav.contact">Contact</a>
+        <a href="/" class="nav-link nav-link-active" aria-current="page" data-i18n="nav.home">Bubuka</a>
+        <a href="/about" class="nav-link" data-i18n="nav.about">Ngeunaan</a>
+        <a href="/games" class="nav-link" data-i18n="nav.games">Kaulinan</a>
+        <a href="/contact" class="nav-link" data-i18n="nav.contact">Kontak</a>
       </nav>
       <div class="flex items-center gap-1.5">
-        <div class="hidden sm:flex items-center rounded-full border-2 border-line-light dark:border-line-dark p-0.5" role="group" data-i18n-attr="aria-label:lang.label" aria-label="Language">
-          <button type="button" data-lang="en" aria-pressed="true" class="lang-btn lang-active">EN</button>
+        <div class="hidden sm:flex items-center rounded-full border-2 border-line-light dark:border-line-dark p-0.5" role="group" data-i18n-attr="aria-label:lang.label" aria-label="Basa">
+          <button type="button" data-lang="su" aria-pressed="true" class="lang-btn lang-active">SU</button>
+          <button type="button" data-lang="en" aria-pressed="false" class="lang-btn">EN</button>
           <button type="button" data-lang="id" aria-pressed="false" class="lang-btn">ID</button>
         </div>
-        <button type="button" data-theme-toggle class="icon-btn" data-i18n-attr="aria-label:theme.toggle" aria-label="Toggle color theme">
+        <button type="button" data-theme-toggle class="icon-btn" data-i18n-attr="aria-label:theme.toggle" aria-label="Ganti téma">
           <svg data-icon-moon width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
           <svg data-icon-sun width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="hidden"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
           <span data-theme-label class="hidden lg:inline text-sm font-semibold">Dark mode</span>
         </button>
-        <button type="button" id="menu-btn" class="icon-btn md:hidden" aria-expanded="false" aria-controls="mobile-menu" data-i18n-attr="aria-label:nav.menu.open" aria-label="Open menu">
+        <button type="button" id="menu-btn" class="icon-btn md:hidden" aria-expanded="false" aria-controls="mobile-menu" data-i18n-attr="aria-label:nav.menu.open" aria-label="Buka ménu">
           <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><line x1="4" y1="7" x2="20" y2="7"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="17" x2="20" y2="17"/></svg>
         </button>
       </div>
@@ -71,13 +72,14 @@
   </div>
   <div id="mobile-menu" class="md:hidden border-t-2 border-line-light dark:border-line-dark" hidden>
     <nav class="mx-auto max-w-6xl px-4 sm:px-6 py-3 flex flex-col" aria-label="Mobile">
-      <a href="/" class="nav-link" aria-current="page" data-i18n="nav.home">Home</a>
-      <a href="/about" class="nav-link" data-i18n="nav.about">About</a>
-      <a href="/games" class="nav-link" data-i18n="nav.games">Games</a>
-      <a href="/contact" class="nav-link" data-i18n="nav.contact">Contact</a>
-      <div class="flex items-center gap-2 py-3 sm:hidden" role="group" data-i18n-attr="aria-label:lang.label" aria-label="Language">
-        <span class="text-sm font-semibold text-muted-light dark:text-muted-dark" data-i18n="lang.label">Language</span>
-        <button type="button" data-lang="en" aria-pressed="true" class="lang-btn lang-active">EN</button>
+      <a href="/" class="nav-link" aria-current="page" data-i18n="nav.home">Bubuka</a>
+      <a href="/about" class="nav-link" data-i18n="nav.about">Ngeunaan</a>
+      <a href="/games" class="nav-link" data-i18n="nav.games">Kaulinan</a>
+      <a href="/contact" class="nav-link" data-i18n="nav.contact">Kontak</a>
+      <div class="flex items-center gap-2 py-3 sm:hidden" role="group" data-i18n-attr="aria-label:lang.label" aria-label="Basa">
+        <span class="text-sm font-semibold text-muted-light dark:text-muted-dark" data-i18n="lang.label">Basa</span>
+        <button type="button" data-lang="su" aria-pressed="true" class="lang-btn lang-active">SU</button>
+          <button type="button" data-lang="en" aria-pressed="false" class="lang-btn">EN</button>
         <button type="button" data-lang="id" aria-pressed="false" class="lang-btn">ID</button>
       </div>
     </nav>
@@ -89,15 +91,15 @@
   <section class="relative overflow-hidden">
     <div class="mx-auto max-w-6xl px-4 sm:px-6 pt-14 pb-16 md:pt-20 md:pb-24 grid gap-10 md:grid-cols-2 items-center">
       <div class="reveal">
-        <span class="sticker text-brand-purple dark:text-brand-yellow border-brand-purple dark:border-brand-yellow" data-i18n="index.hero.badge">Indie Game Studio</span>
+        <span class="sticker text-brand-purple dark:text-brand-yellow border-brand-purple dark:border-brand-yellow" data-i18n="index.hero.badge">Sanggar Kaulinan Indie</span>
         <h1 class="mt-5 text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-[1.05]" data-i18n="index.hero.title">Maén di Jaman Kiwari.</h1>
-        <p class="mt-5 text-lg text-muted-light dark:text-muted-dark max-w-xl" data-i18n="index.hero.sub">We believe play is more than just entertainment. UlinKiwari creates games that are fun, creative, and close to today's players, carrying the warmth of Sundanese values and inspiration.</p>
+        <p class="mt-5 text-lg text-muted-light dark:text-muted-dark max-w-xl" data-i18n="index.hero.sub">Kami percaya ulin téh leuwih ti saukur hiburan. UlinKiwari nyieun kaulinan nu seru, kréatif, jeung deukeut jeung pamaén jaman kiwari, mawa kahaneutan ajén jeung inspirasi budaya Sunda.</p>
         <div class="mt-8 flex flex-wrap gap-4">
-          <a href="/games" class="btn-pop bg-brand-orange text-white" data-i18n="index.hero.cta.games">Explore Games</a>
-          <a href="/about" class="btn-pop border-brand-purple text-brand-purple dark:text-brand-yellow border-2" data-i18n="index.hero.cta.about">Meet the Studio</a>
+          <a href="/games" class="btn-pop bg-brand-orange text-white" data-i18n="index.hero.cta.games">Jelajah Kaulinan</a>
+          <a href="/about" class="btn-pop border-brand-purple text-brand-purple dark:text-brand-yellow border-2" data-i18n="index.hero.cta.about">Wanoh jeung Sanggar</a>
         </div>
       </div>
-      <div class="reveal" role="img" data-i18n-attr="aria-label:index.hero.art.alt" aria-label="Playful abstract illustration: a smiling sun with sparkles and game shapes">
+      <div class="reveal" role="img" data-i18n-attr="aria-label:index.hero.art.alt" aria-label="Ilustrasi abstrak nu pikaseurieun: panonpoé seuri jeung béntang caang jeung wangun kaulinan">
         <svg viewBox="0 0 480 400" class="w-full h-auto" aria-hidden="true">
           <circle cx="120" cy="120" r="72" fill="#FF7849"/>
           <g stroke="#FFD76A" stroke-width="10" stroke-linecap="round">
@@ -123,39 +125,39 @@
   <!-- Brand story -->
   <section class="py-16 md:py-24 bg-ivory-deep/50 dark:bg-plum-soft/30">
     <div class="mx-auto max-w-6xl px-4 sm:px-6">
-      <p class="sticker text-brand-orange-deep dark:text-brand-orange border-brand-orange reveal" data-i18n="index.story.kicker">Our Story</p>
-      <h2 class="mt-4 text-3xl md:text-4xl font-extrabold reveal" data-i18n="index.story.title">What does “UlinKiwari” mean?</h2>
+      <p class="sticker text-brand-orange-deep dark:text-brand-orange border-brand-orange reveal" data-i18n="index.story.kicker">Carita Kami</p>
+      <h2 class="mt-4 text-3xl md:text-4xl font-extrabold reveal" data-i18n="index.story.title">Naon hartina “UlinKiwari”?</h2>
       <div class="mt-8 grid gap-6 md:grid-cols-2">
         <article class="card-pop bg-ivory dark:bg-plum-soft p-7 reveal">
-          <h3 class="text-xl font-extrabold text-brand-orange-deep dark:text-brand-orange" data-i18n="index.story.ulin.title">Ulin = To Play</h3>
-          <p class="mt-3 text-muted-light dark:text-muted-dark" data-i18n-html="index.story.ulin.text">In Sundanese, <em>ulin</em> means to play. Play is humanity's natural way to learn, connect, and enjoy life, for children and grown-ups alike.</p>
+          <h3 class="text-xl font-extrabold text-brand-orange-deep dark:text-brand-orange" data-i18n="index.story.ulin.title">Ulin = Ulin</h3>
+          <p class="mt-3 text-muted-light dark:text-muted-dark" data-i18n-html="index.story.ulin.text">Dina basa Sunda, <em>ulin</em> hartina ulin. Ulin nyaéta cara alami manusa pikeun diajar, silih hubungan, jeung ngarasakeun hirup, pikeun barudak jeung nu déwasa.</p>
         </article>
         <article class="card-pop bg-ivory dark:bg-plum-soft p-7 reveal">
-          <h3 class="text-xl font-extrabold text-brand-purple dark:text-brand-yellow" data-i18n="index.story.kiwari.title">Kiwari = The Present Day</h3>
-          <p class="mt-3 text-muted-light dark:text-muted-dark" data-i18n-html="index.story.kiwari.text"><em>Kiwari</em> means right now, the present day. We make games for today's players: playful, relevant, and easy to pick up.</p>
+          <h3 class="text-xl font-extrabold text-brand-purple dark:text-brand-yellow" data-i18n="index.story.kiwari.title">Kiwari = Jaman Kiwari</h3>
+          <p class="mt-3 text-muted-light dark:text-muted-dark" data-i18n-html="index.story.kiwari.text"><em>Kiwari</em> hartina ayeuna, jaman kiwari. Kami nyieun kaulinan pikeun pamaén kiwari: pikaseurieun, rélevan, jeung gampang dipaénkeun.</p>
         </article>
       </div>
-      <p class="mt-8 max-w-3xl text-lg reveal" data-i18n-html="index.story.why">Put them together and you get our belief: playing is a natural way to learn, connect, and enjoy life. Inspired by <em>ulin bari diajar</em>, learning while playing, we make games that are a joy to play and can leave something meaningful behind.</p>
+      <p class="mt-8 max-w-3xl text-lg reveal" data-i18n-html="index.story.why">Gabungkeun duanana, ieu kapercayaan kami: ulin nyaéta cara alami pikeun diajar, silih hubungan, jeung ngarasakeun hirup. Diilhaman ku <em>ulin bari diajar</em>, diajar bari ulin, kami nyieun kaulinan nu pikabungaheun dipaénkeun jeung bisa ninggalkeun hal nu hartina.</p>
     </div>
   </section>
 
   <!-- Featured games -->
   <section class="py-16 md:py-24">
     <div class="mx-auto max-w-6xl px-4 sm:px-6">
-      <p class="sticker text-brand-purple dark:text-brand-yellow border-brand-purple dark:border-brand-yellow reveal" data-i18n="index.featured.kicker">Catalog</p>
+      <p class="sticker text-brand-purple dark:text-brand-yellow border-brand-purple dark:border-brand-yellow reveal" data-i18n="index.featured.kicker">Katalog</p>
       <div class="mt-4 flex flex-wrap items-end justify-between gap-4">
         <div>
-          <h2 class="text-3xl md:text-4xl font-extrabold reveal" data-i18n="index.featured.title">Our Games</h2>
-          <p class="mt-2 text-muted-light dark:text-muted-dark reveal" data-i18n="index.featured.sub">Fresh from the studio, more on the way.</p>
+          <h2 class="text-3xl md:text-4xl font-extrabold reveal" data-i18n="index.featured.title">Kaulinan Kami</h2>
+          <p class="mt-2 text-muted-light dark:text-muted-dark reveal" data-i18n="index.featured.sub">Langsung ti sanggar, réa deui nu bakal datang.</p>
         </div>
-        <a href="/games" class="btn-pop bg-brand-purple text-white reveal" data-i18n="index.featured.empty.cta">View All Games</a>
+        <a href="/games" class="btn-pop bg-brand-purple text-white reveal" data-i18n="index.featured.empty.cta">Témbongkeun Sadaya Kaulinan</a>
       </div>
       <div class="mt-8 card-pop bg-ivory dark:bg-plum-soft p-10 text-center reveal">
         <div class="mx-auto w-16 h-16 rounded-3xl bg-brand-yellow/60 dark:bg-brand-yellow/20 flex items-center justify-center" aria-hidden="true">
           <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#e85f31" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
         </div>
-        <h3 class="mt-4 text-2xl font-extrabold" data-i18n="index.featured.empty.title">Coming Soon</h3>
-        <p class="mt-2 text-muted-light dark:text-muted-dark max-w-md mx-auto" data-i18n="index.featured.empty.text">Exciting games are in the works. Stay tuned for what's next!</p>
+        <h3 class="mt-4 text-2xl font-extrabold" data-i18n="index.featured.empty.title">Engké Datang</h3>
+        <p class="mt-2 text-muted-light dark:text-muted-dark max-w-md mx-auto" data-i18n="index.featured.empty.text">Kaulinan seru keur disiapkeun. Tunggu kabar salajengna!</p>
       </div>
     </div>
   </section>
@@ -163,28 +165,28 @@
   <!-- Values -->
   <section class="py-16 md:py-24 bg-ivory-deep/50 dark:bg-plum-soft/30">
     <div class="mx-auto max-w-6xl px-4 sm:px-6">
-      <p class="sticker text-brand-orange-deep dark:text-brand-orange border-brand-orange reveal" data-i18n="index.values.kicker">Our Values</p>
-      <h2 class="mt-4 text-3xl md:text-4xl font-extrabold reveal" data-i18n="index.values.title">Play with Principles</h2>
+      <p class="sticker text-brand-orange-deep dark:text-brand-orange border-brand-orange reveal" data-i18n="index.values.kicker">Ajén Kami</p>
+      <h2 class="mt-4 text-3xl md:text-4xl font-extrabold reveal" data-i18n="index.values.title">Ulin jeung Prinsip</h2>
       <div class="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
         <article class="card-pop bg-ivory dark:bg-plum-soft p-6 reveal">
           <div class="w-12 h-12 rounded-2xl bg-brand-orange/15 dark:bg-brand-orange/25 flex items-center justify-center font-display font-extrabold text-brand-orange-deep dark:text-brand-orange text-xl" aria-hidden="true">1</div>
-          <h3 class="mt-4 text-lg font-extrabold" data-i18n="index.values.1.title">Fun First</h3>
-          <p class="mt-2 text-sm text-muted-light dark:text-muted-dark" data-i18n="index.values.1.text">If it's not fun, what's the point? Player enjoyment always comes first.</p>
+          <h3 class="mt-4 text-lg font-extrabold" data-i18n="index.values.1.title">Seru Ti Heula</h3>
+          <p class="mt-2 text-sm text-muted-light dark:text-muted-dark" data-i18n="index.values.1.text">Lamun teu seru, keur naon? Kapuas pamaén salawasna nu utama.</p>
         </article>
         <article class="card-pop bg-ivory dark:bg-plum-soft p-6 reveal">
           <div class="w-12 h-12 rounded-2xl bg-brand-purple/15 dark:bg-brand-purple/30 flex items-center justify-center font-display font-extrabold text-brand-purple dark:text-brand-yellow text-xl" aria-hidden="true">2</div>
-          <h3 class="mt-4 text-lg font-extrabold" data-i18n="index.values.2.title">Curiosity</h3>
-          <p class="mt-2 text-sm text-muted-light dark:text-muted-dark" data-i18n="index.values.2.text">We love experimenting and trying new things in every game we make.</p>
+          <h3 class="mt-4 text-lg font-extrabold" data-i18n="index.values.2.title">Panasaran</h3>
+          <p class="mt-2 text-sm text-muted-light dark:text-muted-dark" data-i18n="index.values.2.text">Kami resep ékspérimén jeung nyoba hal anyar dina unggal kaulinan nu dijieun.</p>
         </article>
         <article class="card-pop bg-ivory dark:bg-plum-soft p-6 reveal">
           <div class="w-12 h-12 rounded-2xl bg-brand-yellow/40 dark:bg-brand-yellow/20 flex items-center justify-center font-display font-extrabold text-[#a07c1a] dark:text-brand-yellow text-xl" aria-hidden="true">3</div>
-          <h3 class="mt-4 text-lg font-extrabold" data-i18n="index.values.3.title">Creativity</h3>
-          <p class="mt-2 text-sm text-muted-light dark:text-muted-dark" data-i18n="index.values.3.text">Fresh ideas and bold approaches make every game feel special.</p>
+          <h3 class="mt-4 text-lg font-extrabold" data-i18n="index.values.3.title">Kréativitas</h3>
+          <p class="mt-2 text-sm text-muted-light dark:text-muted-dark" data-i18n="index.values.3.text">Ide seger jeung pendekatan nu wani nyieun unggal kaulinan karasa istiméwa.</p>
         </article>
         <article class="card-pop bg-ivory dark:bg-plum-soft p-6 reveal">
           <div class="w-12 h-12 rounded-2xl bg-brand-orange/15 dark:bg-brand-orange/25 flex items-center justify-center font-display font-extrabold text-brand-orange-deep dark:text-brand-orange text-xl" aria-hidden="true">4</div>
-          <h3 class="mt-4 text-lg font-extrabold" data-i18n="index.values.4.title">Meaningful Play</h3>
-          <p class="mt-2 text-sm text-muted-light dark:text-muted-dark" data-i18n-html="index.values.4.text">Inspired by <em>ulin bari diajar</em>, learning while playing. Our games may leave something meaningful behind.</p>
+          <h3 class="mt-4 text-lg font-extrabold" data-i18n="index.values.4.title">Ulin nu Hartina</h3>
+          <p class="mt-2 text-sm text-muted-light dark:text-muted-dark" data-i18n-html="index.values.4.text">Diilhaman ku <em>ulin bari diajar</em>, diajar bari ulin. Kaulinan kami meureun ninggalkeun hal nu hartina.</p>
         </article>
       </div>
     </div>
@@ -193,9 +195,9 @@
   <!-- Cultural inspiration -->
   <section class="py-16 md:py-24">
     <div class="mx-auto max-w-4xl px-4 sm:px-6 text-center">
-      <p class="sticker text-brand-purple dark:text-brand-yellow border-brand-purple dark:border-brand-yellow reveal" data-i18n="index.culture.kicker">Inspiration</p>
+      <p class="sticker text-brand-purple dark:text-brand-yellow border-brand-purple dark:border-brand-yellow reveal" data-i18n="index.culture.kicker">Inspirasi</p>
       <h2 class="mt-4 text-3xl md:text-4xl font-extrabold reveal" data-i18n="index.culture.title">Ulin Bari Diajar</h2>
-      <p class="mt-5 text-lg text-muted-light dark:text-muted-dark reveal" data-i18n-html="index.culture.text">The Sundanese philosophy of <em>ulin bari diajar</em>, learning while playing, inspires how we work. The warmth of Sundanese stories and values colors our craft, without forcing every game into a traditional theme. Cultural roots inspire us; they don't limit us.</p>
+      <p class="mt-5 text-lg text-muted-light dark:text-muted-dark reveal" data-i18n-html="index.culture.text">Filosofi Sunda <em>ulin bari diajar</em>, diajar bari ulin, jadi inspirasi cara kami gawé. Kahaneutan carita jeung ajén budaya Sunda ngawarnaan karya kami, tanpa maksa unggal kaulinan kudu téma tradisional. Akar budaya ngainspirasi kami; lain ngawatesan kami.</p>
     </div>
   </section>
 
@@ -203,11 +205,11 @@
   <section class="pb-20 md:pb-28">
     <div class="mx-auto max-w-6xl px-4 sm:px-6">
       <div class="reveal rounded-[2rem] bg-gradient-to-br from-brand-orange to-brand-purple p-10 md:p-14 text-center text-white shadow-xl">
-        <h2 class="text-3xl md:text-4xl font-extrabold" data-i18n="index.cta.title">Ready to play in the present day?</h2>
-        <p class="mt-3 text-white/90 max-w-xl mx-auto" data-i18n="index.cta.text">Browse our game catalog or say hello to the studio.</p>
+        <h2 class="text-3xl md:text-4xl font-extrabold" data-i18n="index.cta.title">Siap ulin di jaman kiwari?</h2>
+        <p class="mt-3 text-white/90 max-w-xl mx-auto" data-i18n="index.cta.text">Jelajah katalog kaulinan kami atawa sapa sanggar kami.</p>
         <div class="mt-8 flex flex-wrap justify-center gap-4">
-          <a href="/games" class="btn-pop bg-white text-brand-purple-deep" data-i18n="index.cta.games">Explore Games</a>
-          <a href="/contact" class="btn-pop border-2 border-white text-white" data-i18n="index.cta.contact">Contact Us</a>
+          <a href="/games" class="btn-pop bg-white text-brand-purple-deep" data-i18n="index.cta.games">Jelajah Kaulinan</a>
+          <a href="/contact" class="btn-pop border-2 border-white text-white" data-i18n="index.cta.contact">Hubungi Kami</a>
         </div>
       </div>
     </div>
@@ -223,28 +225,28 @@
           <span class="font-display font-extrabold">UlinKiwari Games</span>
         </div>
         <p class="mt-3 font-display font-bold text-brand-orange-deep dark:text-brand-orange" data-i18n="brand.tagline">Maén di Jaman Kiwari.</p>
-        <p class="mt-2 text-sm text-muted-light dark:text-muted-dark" data-i18n="footer.desc">An indie game studio crafting fun, creative play for today's players, with the warmth of Sundanese values and inspiration.</p>
+        <p class="mt-2 text-sm text-muted-light dark:text-muted-dark" data-i18n="footer.desc">Sanggar kaulinan indie nu nyieun kaulinan seru jeung kréatif pikeun pamaén jaman kiwari, kalayan kahaneutan ajén jeung inspirasi budaya Sunda.</p>
       </div>
       <nav aria-label="Footer">
-        <h3 class="font-display font-extrabold" data-i18n="footer.nav.title">Explore</h3>
+        <h3 class="font-display font-extrabold" data-i18n="footer.nav.title">Jelajah</h3>
         <ul class="mt-3 space-y-1">
-          <li><a href="/" class="footer-link" data-i18n="nav.home">Home</a></li>
-          <li><a href="/about" class="footer-link" data-i18n="nav.about">About</a></li>
-          <li><a href="/games" class="footer-link" data-i18n="nav.games">Games</a></li>
-          <li><a href="/contact" class="footer-link" data-i18n="nav.contact">Contact</a></li>
+          <li><a href="/" class="footer-link" data-i18n="nav.home">Bubuka</a></li>
+          <li><a href="/about" class="footer-link" data-i18n="nav.about">Ngeunaan</a></li>
+          <li><a href="/games" class="footer-link" data-i18n="nav.games">Kaulinan</a></li>
+          <li><a href="/contact" class="footer-link" data-i18n="nav.contact">Kontak</a></li>
         </ul>
       </nav>
       <div>
-        <h3 class="font-display font-extrabold" data-i18n="footer.legal.title">Legal</h3>
+        <h3 class="font-display font-extrabold" data-i18n="footer.legal.title">Hukum</h3>
         <ul class="mt-3 space-y-1">
-          <li><a href="/privacy" class="footer-link" data-i18n="footer.privacy">Privacy Policy</a></li>
-          <li><a href="/terms" class="footer-link" data-i18n="footer.terms">Terms of Service</a></li>
+          <li><a href="/privacy" class="footer-link" data-i18n="footer.privacy">Kawijakan Privasi</a></li>
+          <li><a href="/terms" class="footer-link" data-i18n="footer.terms">Sarat Layanan</a></li>
         </ul>
       </div>
     </div>
     <div class="mt-10 pt-6 border-t border-line-light dark:border-line-dark flex flex-col sm:flex-row justify-between gap-2 text-sm text-muted-light dark:text-muted-dark">
-      <p>© <span data-year>2026</span> UlinKiwari Games. <span data-i18n="footer.rights">All rights reserved.</span></p>
-      <p class="text-xs" data-i18n="footer.logo.note">Provisional logo</p>
+      <p>© <span data-year>2026</span> UlinKiwari Games. <span data-i18n="footer.rights">Sadaya hak ditangtayungan.</span></p>
+      <p class="text-xs" data-i18n="footer.logo.note">Logo sawatara</p>
     </div>
   </div>
 </footer>
