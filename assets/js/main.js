@@ -1,6 +1,6 @@
 /* ── UlinKiwari Games — site behavior ─────────────────────────
    - Theme: light default, toggle persisted (ulinkiwari-theme)
-   - Language: English default, switcher persisted (ulinkiwari-lang)
+   - Language: Sundanese default, switcher persisted (ulinkiwari-lang)
    - Mobile menu: Escape / aria-expanded / close-on-navigate
    - Scroll reveal (reduced-motion aware), footer year
 ---------------------------------------------------------------- */
@@ -8,24 +8,28 @@
   "use strict";
 
   var root = document.documentElement;
-  var I18N = window.ULIN_I18N || { en: {}, id: {} };
+  var I18N = window.ULIN_I18N || { su: {}, en: {}, id: {} };
+  var LANGS = ["su", "en", "id"];
+  var DEFAULT_LANG = "su";
 
   function dictFor(lang) {
-    return I18N[lang] || I18N.en;
+    return I18N[lang] || I18N[DEFAULT_LANG];
   }
   function t(key, lang) {
     var d = dictFor(lang || currentLang());
     if (d[key] != null) return d[key];
+    if (I18N[DEFAULT_LANG][key] != null) return I18N[DEFAULT_LANG][key];
     if (I18N.en[key] != null) return I18N.en[key];
     return null;
   }
   function currentLang() {
-    return root.getAttribute("lang") === "id" ? "id" : "en";
+    var l = root.getAttribute("lang");
+    return LANGS.indexOf(l) >= 0 ? l : DEFAULT_LANG;
   }
 
   /* ── i18n application ─────────────────────────────────────── */
   function applyLang(lang) {
-    if (lang !== "id" && lang !== "en") lang = "en";
+    if (LANGS.indexOf(lang) < 0) lang = DEFAULT_LANG;
     root.setAttribute("lang", lang);
 
     root.querySelectorAll("[data-i18n]").forEach(function (el) {
@@ -112,11 +116,11 @@
 
   /* ── wire up on DOM ready ─────────────────────────────────── */
   function init() {
-    // Language: persisted choice wins, English default
-    var savedLang = "en";
+    // Language: persisted choice wins, Sundanese default
+    var savedLang = DEFAULT_LANG;
     try {
       var s = localStorage.getItem("ulinkiwari-lang");
-      if (s === "id" || s === "en") savedLang = s;
+      if (LANGS.indexOf(s) >= 0) savedLang = s;
     } catch (e) {}
     applyLang(savedLang);
 
