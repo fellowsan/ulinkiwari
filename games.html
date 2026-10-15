@@ -1,18 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="su">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title data-i18n="games.meta.title">Games | UlinKiwari Games</title>
-  <meta name="description" data-i18n-attr="content:games.meta.desc" content="The game catalog of UlinKiwari Games. New titles are on the way, check back soon!">
+  <title data-i18n="games.meta.title">Kaulinan | UlinKiwari Games</title>
+  <meta name="description" data-i18n-attr="content:games.meta.desc" content="Katalog kaulinan UlinKiwari Games. Judul-judul anyar keur disiapkeun, pantau terus!">
   <link rel="canonical" href="https://ulinkiwari.my.id/games">
   <link rel="alternate" hreflang="en" href="https://ulinkiwari.my.id/games">
   <link rel="alternate" hreflang="id" href="https://ulinkiwari.my.id/games">
   <link rel="alternate" hreflang="x-default" href="https://ulinkiwari.my.id/games">
   <meta property="og:type" content="website">
   <meta property="og:site_name" data-i18n-attr="content:meta.og.site" content="UlinKiwari Games">
-  <meta property="og:title" data-i18n-attr="content:games.meta.title" content="Games | UlinKiwari Games">
-  <meta property="og:description" data-i18n-attr="content:games.meta.desc" content="The game catalog of UlinKiwari Games. New titles are on the way, check back soon!">
+  <meta property="og:title" data-i18n-attr="content:games.meta.title" content="Kaulinan | UlinKiwari Games">
+  <meta property="og:description" data-i18n-attr="content:games.meta.desc" content="Katalog kaulinan UlinKiwari Games. Judul-judul anyar keur disiapkeun, pantau terus!">
   <meta property="og:url" content="https://ulinkiwari.my.id/games">
   <meta name="theme-color" content="#FFFAF2" media="(prefers-color-scheme: light)">
   <meta name="theme-color" content="#211B2B" media="(prefers-color-scheme: dark)">
@@ -32,7 +32,7 @@
   </script>
 </head>
 <body class="bg-ivory text-charcoal dark:bg-plum dark:text-ivory min-h-screen flex flex-col">
-<a href="#main" class="skip-link" data-i18n="a11y.skip">Skip to content</a>
+<a href="#main" class="skip-link" data-i18n="a11y.skip">Luncat ka eusi</a>
 
 <header class="sticky top-0 z-50 bg-ivory/90 dark:bg-plum/90 backdrop-blur border-b-2 border-line-light dark:border-line-dark">
   <div class="mx-auto max-w-6xl px-4 sm:px-6">
@@ -45,22 +45,23 @@
         </span>
       </a>
       <nav class="hidden md:flex items-center gap-1" aria-label="Primary">
-        <a href="/" class="nav-link" data-i18n="nav.home">Home</a>
-        <a href="/about" class="nav-link" data-i18n="nav.about">About</a>
-        <a href="/games" class="nav-link nav-link-active" aria-current="page" data-i18n="nav.games">Games</a>
-        <a href="/contact" class="nav-link" data-i18n="nav.contact">Contact</a>
+        <a href="/" class="nav-link" data-i18n="nav.home">Bubuka</a>
+        <a href="/about" class="nav-link" data-i18n="nav.about">Ngeunaan</a>
+        <a href="/games" class="nav-link nav-link-active" aria-current="page" data-i18n="nav.games">Kaulinan</a>
+        <a href="/contact" class="nav-link" data-i18n="nav.contact">Kontak</a>
       </nav>
       <div class="flex items-center gap-1.5">
-        <div class="hidden sm:flex items-center rounded-full border-2 border-line-light dark:border-line-dark p-0.5" role="group" data-i18n-attr="aria-label:lang.label" aria-label="Language">
-          <button type="button" data-lang="en" aria-pressed="true" class="lang-btn lang-active">EN</button>
+        <div class="hidden sm:flex items-center rounded-full border-2 border-line-light dark:border-line-dark p-0.5" role="group" data-i18n-attr="aria-label:lang.label" aria-label="Basa">
+          <button type="button" data-lang="su" aria-pressed="true" class="lang-btn lang-active">SU</button>
+          <button type="button" data-lang="en" aria-pressed="false" class="lang-btn">EN</button>
           <button type="button" data-lang="id" aria-pressed="false" class="lang-btn">ID</button>
         </div>
-        <button type="button" data-theme-toggle class="icon-btn" data-i18n-attr="aria-label:theme.toggle" aria-label="Toggle color theme">
+        <button type="button" data-theme-toggle class="icon-btn" data-i18n-attr="aria-label:theme.toggle" aria-label="Ganti téma">
           <svg data-icon-moon width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
           <svg data-icon-sun width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="hidden"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
           <span data-theme-label class="hidden lg:inline text-sm font-semibold">Dark mode</span>
         </button>
-        <button type="button" id="menu-btn" class="icon-btn md:hidden" aria-expanded="false" aria-controls="mobile-menu" data-i18n-attr="aria-label:nav.menu.open" aria-label="Open menu">
+        <button type="button" id="menu-btn" class="icon-btn md:hidden" aria-expanded="false" aria-controls="mobile-menu" data-i18n-attr="aria-label:nav.menu.open" aria-label="Buka ménu">
           <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><line x1="4" y1="7" x2="20" y2="7"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="17" x2="20" y2="17"/></svg>
         </button>
       </div>
@@ -68,13 +69,14 @@
   </div>
   <div id="mobile-menu" class="md:hidden border-t-2 border-line-light dark:border-line-dark" hidden>
     <nav class="mx-auto max-w-6xl px-4 sm:px-6 py-3 flex flex-col" aria-label="Mobile">
-      <a href="/" class="nav-link" data-i18n="nav.home">Home</a>
-      <a href="/about" class="nav-link" data-i18n="nav.about">About</a>
-      <a href="/games" class="nav-link" aria-current="page" data-i18n="nav.games">Games</a>
-      <a href="/contact" class="nav-link" data-i18n="nav.contact">Contact</a>
-      <div class="flex items-center gap-2 py-3 sm:hidden" role="group" data-i18n-attr="aria-label:lang.label" aria-label="Language">
-        <span class="text-sm font-semibold text-muted-light dark:text-muted-dark" data-i18n="lang.label">Language</span>
-        <button type="button" data-lang="en" aria-pressed="true" class="lang-btn lang-active">EN</button>
+      <a href="/" class="nav-link" data-i18n="nav.home">Bubuka</a>
+      <a href="/about" class="nav-link" data-i18n="nav.about">Ngeunaan</a>
+      <a href="/games" class="nav-link" aria-current="page" data-i18n="nav.games">Kaulinan</a>
+      <a href="/contact" class="nav-link" data-i18n="nav.contact">Kontak</a>
+      <div class="flex items-center gap-2 py-3 sm:hidden" role="group" data-i18n-attr="aria-label:lang.label" aria-label="Basa">
+        <span class="text-sm font-semibold text-muted-light dark:text-muted-dark" data-i18n="lang.label">Basa</span>
+        <button type="button" data-lang="su" aria-pressed="true" class="lang-btn lang-active">SU</button>
+          <button type="button" data-lang="en" aria-pressed="false" class="lang-btn">EN</button>
         <button type="button" data-lang="id" aria-pressed="false" class="lang-btn">ID</button>
       </div>
     </nav>
@@ -84,9 +86,9 @@
 <main id="main" class="flex-1">
   <section class="py-14 md:py-20">
     <div class="mx-auto max-w-4xl px-4 sm:px-6 text-center">
-      <p class="sticker text-brand-purple dark:text-brand-yellow border-brand-purple dark:border-brand-yellow reveal" data-i18n="games.hero.kicker">Catalog</p>
-      <h1 class="mt-5 text-4xl md:text-5xl font-extrabold reveal" data-i18n="games.hero.title">Our Games</h1>
-      <p class="mt-4 text-lg text-muted-light dark:text-muted-dark reveal" data-i18n="games.hero.sub">Every game we release will live here.</p>
+      <p class="sticker text-brand-purple dark:text-brand-yellow border-brand-purple dark:border-brand-yellow reveal" data-i18n="games.hero.kicker">Katalog</p>
+      <h1 class="mt-5 text-4xl md:text-5xl font-extrabold reveal" data-i18n="games.hero.title">Kaulinan Kami</h1>
+      <p class="mt-4 text-lg text-muted-light dark:text-muted-dark reveal" data-i18n="games.hero.sub">Unggal kaulinan nu kami rilis bakal aya di dieu.</p>
     </div>
   </section>
 
@@ -97,8 +99,8 @@
         <div class="mx-auto w-16 h-16 rounded-3xl bg-brand-yellow/60 dark:bg-brand-yellow/20 flex items-center justify-center" aria-hidden="true">
           <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#e85f31" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="20" height="12" rx="6"/><line x1="7" y1="12" x2="7.01" y2="12"/><line x1="10.5" y1="10.5" x2="10.5" y2="13.5"/><circle cx="16" cy="10.8" r="0.6" fill="#e85f31"/><circle cx="18" cy="13" r="0.6" fill="#e85f31"/></svg>
         </div>
-        <h2 class="mt-4 text-2xl font-extrabold" data-i18n="games.empty.title">Coming Soon</h2>
-        <p class="mt-2 text-muted-light dark:text-muted-dark max-w-md mx-auto" data-i18n="games.empty.text">Exciting games are in the works. Stay tuned for what's next!</p>
+        <h2 class="mt-4 text-2xl font-extrabold" data-i18n="games.empty.title">Engké Datang</h2>
+        <p class="mt-2 text-muted-light dark:text-muted-dark max-w-md mx-auto" data-i18n="games.empty.text">Kaulinan seru keur disiapkeun. Tunggu kabar salajengna!</p>
       </div>
     </div>
   </section>
@@ -106,42 +108,38 @@
   <!-- Example layout preview -->
   <section class="py-12 md:py-16 bg-ivory-deep/50 dark:bg-plum-soft/30">
     <div class="mx-auto max-w-6xl px-4 sm:px-6">
-      <p class="sticker text-brand-orange-deep dark:text-brand-orange border-brand-orange reveal" data-i18n="games.examples.kicker">Layout Preview</p>
-      <h2 class="mt-4 text-3xl font-extrabold reveal" data-i18n="games.examples.title">How game cards will look</h2>
-      <p class="mt-3 text-muted-light dark:text-muted-dark reveal" data-i18n="games.examples.note">The two cards below are layout examples only, not real games.</p>
+      <p class="sticker text-brand-orange-deep dark:text-brand-orange border-brand-orange reveal" data-i18n="games.examples.kicker">Pratinjau Tampilan</p>
+      <h2 class="mt-4 text-3xl font-extrabold reveal" data-i18n="games.examples.title">Kieu wangun kartu kaulinan engké</h2>
+      <p class="mt-3 text-muted-light dark:text-muted-dark reveal" data-i18n="games.examples.note">Dua kartu di handap ieu ngan conto tampilan, lain kaulinan asli.</p>
       <div class="mt-8 grid gap-6 md:grid-cols-2">
         <!-- EXAMPLE CARD 1 -->
         <article class="card-pop bg-ivory dark:bg-plum-soft overflow-hidden reveal opacity-90" aria-label="Example card">
           <div class="h-44 bg-gradient-to-br from-brand-orange/70 to-brand-purple/70 flex items-center justify-center">
-            <svg width="72" height="72" viewBox="0 0 72 72" role="img" data-i18n-attr="aria-label:games.ex.art.alt" aria-label="Example placeholder artwork"><rect x="8" y="8" width="56" height="56" rx="16" fill="#FFFAF2" opacity="0.85"/><circle cx="36" cy="36" r="12" fill="#FF7849"/><path d="M52 18l2.4 6L60 26.4l-5.6 2.4L52 35l-2.4-6.2L44 26.4l5.6-2.4z" fill="#6546A6"/></svg>
+            <svg width="72" height="72" viewBox="0 0 72 72" role="img" data-i18n-attr="aria-label:games.ex.art.alt" aria-label="Artwork conto sawatara"><rect x="8" y="8" width="56" height="56" rx="16" fill="#FFFAF2" opacity="0.85"/><circle cx="36" cy="36" r="12" fill="#FF7849"/><path d="M52 18l2.4 6L60 26.4l-5.6 2.4L52 35l-2.4-6.2L44 26.4l5.6-2.4z" fill="#6546A6"/></svg>
           </div>
           <div class="p-6">
             <div class="flex items-center justify-between gap-2">
-              <span class="sticker text-brand-purple dark:text-brand-yellow border-brand-purple dark:border-brand-yellow !text-[0.68rem]" data-i18n="games.ex1.status">Example</span>
-              <span class="text-sm font-semibold text-muted-light dark:text-muted-dark" data-i18n="games.ex1.genre">Cozy Puzzle</span>
+              <span class="sticker text-brand-purple dark:text-brand-yellow border-brand-purple dark:border-brand-yellow !text-[0.68rem]" data-i18n="games.ex1.status">Conto</span>
+              <span class="text-sm font-semibold text-muted-light dark:text-muted-dark" data-i18n="games.ex1.genre">Puzzle Santai</span>
             </div>
-            <h3 class="mt-3 text-xl font-extrabold" data-i18n="games.ex1.title">Example Game A</h3>
-            <p class="mt-2 text-muted-light dark:text-muted-dark" data-i18n="games.ex1.desc">A sample card showing how a finished game will be presented: artwork, genre, and store link.</p>
+            <h3 class="mt-3 text-xl font-extrabold" data-i18n="games.ex1.title">Conto Kaulinan A</h3>
+            <p class="mt-2 text-muted-light dark:text-muted-dark" data-i18n="games.ex1.desc">Kartu conto nu némbongkeun tampilan kaulinan nu geus jadi: artwork, genre, jeung tautan toko.</p>
           </div>
         </article>
         <!-- EXAMPLE CARD 2 -->
         <article class="card-pop bg-ivory dark:bg-plum-soft overflow-hidden reveal opacity-90" aria-label="Example card">
           <div class="h-44 bg-gradient-to-br from-brand-purple/70 to-brand-yellow/70 flex items-center justify-center">
-            <svg width="72" height="72" viewBox="0 0 72 72" role="img" data-i18n-attr="aria-label:games.ex.art.alt" aria-label="Example placeholder artwork"><rect x="8" y="8" width="56" height="56" rx="16" fill="#211B2B" opacity="0.9"/><path d="M30 26l18 10-18 10z" fill="#FFD76A"/><circle cx="52" cy="20" r="5" fill="#FF7849"/></svg>
+            <svg width="72" height="72" viewBox="0 0 72 72" role="img" data-i18n-attr="aria-label:games.ex.art.alt" aria-label="Artwork conto sawatara"><rect x="8" y="8" width="56" height="56" rx="16" fill="#211B2B" opacity="0.9"/><path d="M30 26l18 10-18 10z" fill="#FFD76A"/><circle cx="52" cy="20" r="5" fill="#FF7849"/></svg>
           </div>
           <div class="p-6">
             <div class="flex items-center justify-between gap-2">
-              <span class="sticker text-brand-purple dark:text-brand-yellow border-brand-purple dark:border-brand-yellow !text-[0.68rem]" data-i18n="games.ex2.status">Example</span>
-              <span class="text-sm font-semibold text-muted-light dark:text-muted-dark" data-i18n="games.ex2.genre">Fun Arcade</span>
+              <span class="sticker text-brand-purple dark:text-brand-yellow border-brand-purple dark:border-brand-yellow !text-[0.68rem]" data-i18n="games.ex2.status">Conto</span>
+              <span class="text-sm font-semibold text-muted-light dark:text-muted-dark" data-i18n="games.ex2.genre">Arcade Seru</span>
             </div>
-            <h3 class="mt-3 text-xl font-extrabold" data-i18n="games.ex2.title">Example Game B</h3>
-            <p class="mt-2 text-muted-light dark:text-muted-dark" data-i18n="games.ex2.desc">Another sample card. Real titles, descriptions, and Play Store links will appear here once confirmed.</p>
+            <h3 class="mt-3 text-xl font-extrabold" data-i18n="games.ex2.title">Conto Kaulinan B</h3>
+            <p class="mt-2 text-muted-light dark:text-muted-dark" data-i18n="games.ex2.desc">Kartu conto lianna. Judul asli, déskripsi, jeung tautan Play Store bakal tampil di dieu sanggeus dikonfirmasi.</p>
           </div>
         </article>
-      </div>
-      <div class="mt-8 placeholder-note reveal">
-        <h3 class="font-display font-extrabold" data-i18n="games.howto.title">Adding a new game</h3>
-        <p class="mt-1 text-muted-light dark:text-muted-dark" data-i18n="games.howto.text">Game cards are plain HTML, copy the example card pattern and fill in the real title, genre, description, artwork, and verified store URL. Full instructions live in README.md.</p>
       </div>
     </div>
   </section>
@@ -156,28 +154,28 @@
           <span class="font-display font-extrabold">UlinKiwari Games</span>
         </div>
         <p class="mt-3 font-display font-bold text-brand-orange-deep dark:text-brand-orange" data-i18n="brand.tagline">Maén di Jaman Kiwari.</p>
-        <p class="mt-2 text-sm text-muted-light dark:text-muted-dark" data-i18n="footer.desc">An indie game studio crafting fun, creative play for today's players, with the warmth of Sundanese values and inspiration.</p>
+        <p class="mt-2 text-sm text-muted-light dark:text-muted-dark" data-i18n="footer.desc">Sanggar kaulinan indie nu nyieun kaulinan seru jeung kréatif pikeun pamaén jaman kiwari, kalayan kahaneutan ajén jeung inspirasi budaya Sunda.</p>
       </div>
       <nav aria-label="Footer">
-        <h3 class="font-display font-extrabold" data-i18n="footer.nav.title">Explore</h3>
+        <h3 class="font-display font-extrabold" data-i18n="footer.nav.title">Jelajah</h3>
         <ul class="mt-3 space-y-1">
-          <li><a href="/" class="footer-link" data-i18n="nav.home">Home</a></li>
-          <li><a href="/about" class="footer-link" data-i18n="nav.about">About</a></li>
-          <li><a href="/games" class="footer-link" data-i18n="nav.games">Games</a></li>
-          <li><a href="/contact" class="footer-link" data-i18n="nav.contact">Contact</a></li>
+          <li><a href="/" class="footer-link" data-i18n="nav.home">Bubuka</a></li>
+          <li><a href="/about" class="footer-link" data-i18n="nav.about">Ngeunaan</a></li>
+          <li><a href="/games" class="footer-link" data-i18n="nav.games">Kaulinan</a></li>
+          <li><a href="/contact" class="footer-link" data-i18n="nav.contact">Kontak</a></li>
         </ul>
       </nav>
       <div>
-        <h3 class="font-display font-extrabold" data-i18n="footer.legal.title">Legal</h3>
+        <h3 class="font-display font-extrabold" data-i18n="footer.legal.title">Hukum</h3>
         <ul class="mt-3 space-y-1">
-          <li><a href="/privacy" class="footer-link" data-i18n="footer.privacy">Privacy Policy</a></li>
-          <li><a href="/terms" class="footer-link" data-i18n="footer.terms">Terms of Service</a></li>
+          <li><a href="/privacy" class="footer-link" data-i18n="footer.privacy">Kawijakan Privasi</a></li>
+          <li><a href="/terms" class="footer-link" data-i18n="footer.terms">Sarat Layanan</a></li>
         </ul>
       </div>
     </div>
     <div class="mt-10 pt-6 border-t border-line-light dark:border-line-dark flex flex-col sm:flex-row justify-between gap-2 text-sm text-muted-light dark:text-muted-dark">
-      <p>© <span data-year>2026</span> UlinKiwari Games. <span data-i18n="footer.rights">All rights reserved.</span></p>
-      <p class="text-xs" data-i18n="footer.logo.note">Provisional logo</p>
+      <p>© <span data-year>2026</span> UlinKiwari Games. <span data-i18n="footer.rights">Sadaya hak ditangtayungan.</span></p>
+      <p class="text-xs" data-i18n="footer.logo.note">Logo sawatara</p>
     </div>
   </div>
 </footer>
